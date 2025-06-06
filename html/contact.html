@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="60">-->
+    <meta name="author" content="Sebastian Pereira">
+    <meta name="description" content="Esta pagina es de la semana 3">
+    <meta name="keyword" content="html, css, comienzo, empezando, semana3, flex, grid, animaciones, principiante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/stcore-logo-png_seeklogo-513048.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="box-1">
+            <h1 class="title" id="header-title" onclick="cambiarColor()" title="Name!">Sebastian Pereira</h1>
+            <figure>
+                <img src="../assets/img/golden-logo-template-free-png.webp" alt="Imagen-logo" title="Sebastian Pereira">
+            </figure>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <form action="/send" method="post">
+                    <h2>Visual Customization</h2>
+
+                    <label for="nameº">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea style="resize: none;" name="message" id="message"></textarea>
+
+                    <button type="reset" width="20px">send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-page">
+        <small>all right by Riwi</small>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
