@@ -1,11 +1,18 @@
+
+/*
+Le damos estilos generales y quitamos algunas cosas por defecto
+*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    color: #ffffff;
 }
+
+/*
+Aqui basicamente seleccionamos esta etiqueta para colocarle un fondo
+*/
 
 body {
     display: flex;
@@ -29,10 +36,16 @@ h1 {
     margin-right: 20px;
 }
 
+/*
+Usamos esta pseudoclase para cambiar el color de la letra de la etiqueta h1
+*/
 h1:hover {
     color: green;
 }
 
+/*
+Le damos estilos, tamaño a la caja
+*/
 .box-1 {
     width: 100%;
     background-color: rgba(170, 162, 162, 0.5);
@@ -43,6 +56,9 @@ h1:hover {
     padding: 10px;
 }
 
+/*
+Le damos ancho, alto y algo de diseño a la imagen
+*/
 .box-1 img {
     width: 40px;
     height: 40px;
@@ -59,6 +75,9 @@ h1:hover {
     margin-bottom: 20px;
 }
 
+/*
+Le damos flexibilidad a los ul y quitar estilo a los ul
+*/
 .navbar nav ul {
     display: flex;
     list-style: none;
@@ -70,6 +89,7 @@ h1:hover {
     margin-right: 30px;
     justify-content: center;
     width: 100%;
+    color: #ffffff;
 }
 
 a:hover {
@@ -87,11 +107,6 @@ a:hover {
     width: 100%;
 }
 
-.section-main {
-    background-color: red;
-    margin: 10px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,7 +121,7 @@ a:hover {
     flex: 1;
 }
 
-.section-table{
+.section-table {
     border: 2px 2px solid #000;
     width: 100%;
     display: flex;
@@ -116,16 +131,47 @@ a:hover {
 }
 
 table, th, td {
-  border: 1px solid;
-  width: 50px;
+    border: 1px solid;
+    width: 50px;
 }
 
-/* ----------- Media Queries ----------- */
+
+.section-main {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 30px auto;
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.section-main form,
+.section-main table {
+    max-width: 90vw;
+    width: 100%;
+}
+
+.section-main .grid-item{
+    color: #000;
+}
+
 
 @media (min-width: 768px) and (max-width: 1300px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 5vh;
+    }
+    .section-main {
+        background-color: rgba(255, 255, 255, 0.05);
+        margin: 30px auto;
+        padding: 20px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
     }
 }
 
@@ -163,6 +209,16 @@ table, th, td {
         width: 100vw;
         margin: 20px 0;
     }
+    .section-main {
+        background-color: rgba(255, 255, 255, 0.05);
+        margin: 30px auto;
+        padding: 20px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
 }
 
 @media (min-width: 220px) and (max-width: 600px) {
@@ -193,5 +249,15 @@ table, th, td {
         flex-direction: column;
         width: 100%;
         margin: 20px 0;
+    }
+    .section-main {
+        background-color: rgba(255, 255, 255, 0.05);
+        margin: 30px auto;
+        padding: 20px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
     }
 }
